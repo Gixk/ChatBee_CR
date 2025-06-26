@@ -16,7 +16,7 @@ export interface RespuestaChat {
 
 export async function hacerPregunta(pregunta: string): Promise<RespuestaChat> {
   try {
-    const res = await fetch('http://localhost:8000/api/chatbee', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chatbee`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
