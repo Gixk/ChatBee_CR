@@ -1,0 +1,9 @@
+# Ignorar entornos virtuales
+venv/
+# Ignorar variables de entorno
+*.env
+.env.*
+# Ignorar archivos de configuración locales
+*.log
+*.sqlite
+__pycache__/
